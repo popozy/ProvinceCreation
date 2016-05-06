@@ -7,11 +7,14 @@
     <style>
         /*table {border:1px solid #000;}*/
         td {text-align: center;}
+        /*# @container {background-color: red; width: 1000px; height: 1000px;}*/
         input {border-width: 0px; width: 50px;}
+        button {width: 100px; height: 40px; border-radius: 10px; border: 0; margin: 20px auto;}
+        button:hover{cursor: pointer;}
     </style>
 </head>
 <body>
-    <div id="container">
+    <div id="container-1" class="tb1">
         <table border="1">
             <tr>
                 <th>一级指标</th>
@@ -21,15 +24,15 @@
             </tr>
             <tr>
                 <th>二级指标</th>
-                <td colspan="3">资产质量</td>
-                <td colspan="4">盈利能力</td>
-                <td>资本结构</td>
-                <td colspan="2">规模</td>
-                <td>产品结构</td>
-                <td>政策</td>
-                <td>收企业支持程度</td>
-                <td>经营管理能力</td>
-                <td>信誉状况</td>
+                <td colspan="3">资产质量<p class="lv2-1"></p></td>
+                <td colspan="4">盈利能力<p class="lv2-2"></p></td>
+                <td>资本结构<p class="lv2-3"></p></td>
+                <td colspan="2">规模<p class="lv2-4"></p></td>
+                <td>产品结构<p class="lv2-5"></p></td>
+                <td>政策<p class="lv2-6"></p></td>
+                <td>收企业支持程度<p class="lv2-7"></p></td>
+                <td>经营管理能力<p class="lv2-8"></p></td>
+                <td>信誉状况<p class="lv2-9"></p></td>
             </tr>
             <tr>
                 <th>三级指标</th>
@@ -51,23 +54,30 @@
             </tr>
             <tr>
                 <th>值</th>
-                <td><input id="tb1-1" type="text" placeholder="请输入值"></td>
-                <td><input id="tb1-2" type="text" placeholder="请输入值"></td>
-                <td><input id="tb1-3" type="text" placeholder="请输入值"></td>
-                <td><input id="tb1-4" type="text" placeholder="请输入值"></td>
-                <td><input id="tb1-5" type="text" placeholder="请输入值"></td>
-                <td><input id="tb1-6" type="text" placeholder="请输入值"></td>
-                <td><input id="tb1-7" type="text" placeholder="请输入值"></td>
-                <td><input id="tb1-8" type="text" placeholder="请输入值"></td>
-                <td><input id="tb1-9" type="text" placeholder="请输入值"></td>
-                <td><input id="tb1-10" type="text" placeholder="请输入值"></td>
-                <td><input id="tb1-11" type="text" placeholder="请输入值"></td>
-                <td><input id="tb1-12" type="text" placeholder="请输入值"></td>
-                <td><input id="tb1-13" type="text" placeholder="请输入值"></td>
-                <td><input id="tb1-14" type="text" placeholder="请输入值"></td>
-                <td><input id="tb1-15" type="text" placeholder="请输入值"></td>
+                <td><input class="lv3 3-1" type="text" placeholder="请输入值" value="97.20"></td>
+                <td><input class="lv3 3-2" type="text" placeholder="请输入值" value="2.70"></td>
+                <td><input class="lv3 3-3" type="text" placeholder="请输入值" value="13.10"></td>
+                <td><input class="lv3 3-4" type="text" placeholder="请输入值" value="8.75"></td>
+                <td><input class="lv3 3-5" type="text" placeholder="请输入值" value="8"></td>
+                <td><input class="lv3 3-6" type="text" placeholder="请输入值" value="10.10"></td>
+                <td><input class="lv3 3-7" type="text" placeholder="请输入值" value="14.80"></td>
+                <td><input class="lv3 3-8" type="text" placeholder="请输入值" value="20"></td>
+                <td><input class="lv3 3-9" type="text" placeholder="请输入值" value="1.85"></td>
+                <td><input class="lv3 3-10" type="text" placeholder="请输入值" value="4000"></td>
+                <td><input class="lv3 3-11" type="text" placeholder="请输入值" value="7"></td>
+                <td><input class="lv3 3-12" type="text" placeholder="请输入值" value="2"></td>
+                <td><input class="lv3 3-13" type="text" placeholder="请输入值" value="66.20"></td>
+                <td><input class="lv3 3-14" type="text" placeholder="请输入值" value="9"></td>
+                <td><input class="lv3 3-15" type="text" placeholder="请输入值" value="2"></td>
             </tr>
         </table>
     </div>
+
+    <div id="btn-wrapper"><button id="btn-cal">CALCULATE</button></div>
+
+    <p>企业信用评价:</p>
+    <div id="container-2" class="tb2">
+    </div>
+    <a href=""></a>
 </body>
 </html>
